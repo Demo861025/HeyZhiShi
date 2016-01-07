@@ -3,6 +3,7 @@
 //
 
 #import <RongIMKit/RongIMKit.h>
+#import <RongIMLib/RongIMLib.h>
 #import <AVOSCloud/AVOSCloud.h>
 #import "AFNetworking.h"
 #import "NSString_MessageDigest.h"

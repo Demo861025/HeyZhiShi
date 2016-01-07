@@ -13,7 +13,7 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
     @IBOutlet weak var photobackview: photoView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.photobackview.hidden=false
+        //self.photobackview.hidden=false
     }
 
     override func viewWillAppear(animated: Bool) {

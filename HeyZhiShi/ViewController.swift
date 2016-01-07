@@ -15,6 +15,38 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "主界面"
+        let currentUser = AVUser.currentUser()
+        if (currentUser != nil) {
+            // 允许用户使用应用
+            print(currentUser["RCToken"])
+            
+            RCIM.sharedRCIM().connectWithToken(String(currentUser["RCToken"]),
+                success: { (userId) -> Void in
+                    
+                    //tempSelf!.performSegueWithIdentifier("loginAction", sender: tempSelf!)
+                    dispatch_async(dispatch_get_main_queue()
+                        , { () -> Void in
+                            //self.successNotice("登陆成功!")
+                            self.self.presentNextPage()
+                    })
+                    
+                    print("登陆成功。当前登录的用户ID：\(userId)")
+                }, error: { (status) -> Void in
+                    self.errorNotice("登陆失败！")
+                    print("登陆的错误码为:\(status.rawValue)")
+                }, tokenIncorrect: {
+                    self.errorNotice("登陆失败！")
+                    //token过期或者不正确。
+                    //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
+                    //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
+                    //                        print("token错误")
+            })
+            
+            
+            
+        } else {
+            //缓存用户对象为空时，可打开用户注册界面…
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -27,13 +59,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func presentNextPage(){
+        
+        self.performSegueWithIdentifier("loginAction", sender: self)
+    }
     @IBAction func LoginOnClick(sender: UIButton) {
         
-        func presentNextPage(){
-            self.successNotice("登陆成功!")
-            self.performSegueWithIdentifier("loginAction", sender: self)
-        }
+        
         self.pleaseWait()
         AVUser.logInWithMobilePhoneNumberInBackground(userid.text, password: password.text) { (loginuser, e) -> Void in
             weak var tempSelf = self
@@ -48,7 +80,8 @@ class ViewController: UIViewController {
                         //tempSelf!.performSegueWithIdentifier("loginAction", sender: tempSelf!)
                         dispatch_async(dispatch_get_main_queue()
                             , { () -> Void in
-                                presentNextPage()
+                                self.successNotice("登陆成功!")
+                                self.self.presentNextPage()
                         })
                         
                         print("登陆成功。当前登录的用户ID：\(userId)")

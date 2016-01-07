@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //初始化融云
+        RCIMClient.sharedRCIMClient().initWithAppKey("cpj2xarljgfkn")
         RCIM.sharedRCIM().initWithAppKey("cpj2xarljgfkn")
         //获得leancloud授权
         //[AVOSCloud setApplicationId:@"c0tGa2IhHwP1OHi7qdpYzHdO-gzGzoHsz"
