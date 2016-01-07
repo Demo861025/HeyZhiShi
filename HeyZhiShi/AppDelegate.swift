@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //初始化融云
+        RCIM.sharedRCIM().initWithAppKey("cpj2xarljgfkn")
+        //获得leancloud授权
+        //[AVOSCloud setApplicationId:@"c0tGa2IhHwP1OHi7qdpYzHdO-gzGzoHsz"
+        //clientKey:@"9OlehuDemQR58XTfBkrsacvD"];
+        AVOSCloud.setApplicationId("c0tGa2IhHwP1OHi7qdpYzHdO-gzGzoHsz", clientKey: "9OlehuDemQR58XTfBkrsacvD")
         return true
     }
 
