@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -10,89 +10,24 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="Xje-nx-9aZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bpp-3n-HFU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="4nk-kF-a5i">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emT-NF-tN8">
-                                <rect key="frame" x="194" y="175" width="131" height="30"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="用户名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9k-eQ-kpF">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="30"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5j-3f-cJv">
-                                        <rect key="frame" x="68" y="0.0" width="63" height="30"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <animations/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edi-r0-4ml">
-                                <rect key="frame" x="194" y="252" width="118" height="30"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="密    码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GE8-Ai-glN">
-                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8t-zD-vDo">
-                                        <rect key="frame" x="69" y="0.0" width="49" height="30"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <animations/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8a-8h-S40">
-                                <rect key="frame" x="166" y="381" width="90" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF5-Hh-u3i">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                        <animations/>
-                                        <state key="normal" title="注册"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0p-ga-Sdk">
-                                        <rect key="frame" x="30" y="0.0" width="60" height="30"/>
-                                        <animations/>
-                                        <state key="normal" title="忘记密码"/>
-                                    </button>
-                                </subviews>
-                                <animations/>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaR-Mk-Vxv">
-                                <rect key="frame" x="272" y="292" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="登入"/>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstshow.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-VV-IWl">
+                                <rect key="frame" x="0.0" y="79" width="600" height="394"/>
+                            </imageView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="emT-NF-tN8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9qc-tb-Qrb"/>
-                            <constraint firstItem="S8a-8h-S40" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QLm-yv-R93"/>
-                            <constraint firstItem="FaR-Mk-Vxv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YYQ-Fw-kEl"/>
-                            <constraint firstItem="edi-r0-4ml" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cSr-Br-8FO"/>
+                            <constraint firstItem="XH8-VV-IWl" firstAttribute="leading" secondItem="4nk-kF-a5i" secondAttribute="leading" id="Jzw-i8-LWK"/>
+                            <constraint firstAttribute="trailing" secondItem="XH8-VV-IWl" secondAttribute="trailing" id="KHF-hW-IU2"/>
+                            <constraint firstItem="XH8-VV-IWl" firstAttribute="top" secondItem="Xje-nx-9aZ" secondAttribute="bottom" constant="59" id="QRt-ov-vV4"/>
+                            <constraint firstItem="Bpp-3n-HFU" firstAttribute="top" secondItem="XH8-VV-IWl" secondAttribute="bottom" constant="127" id="ytC-s2-WdJ"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="emT-NF-tN8"/>
-                                <exclude reference="edi-r0-4ml"/>
-                                <exclude reference="S8a-8h-S40"/>
-                                <exclude reference="FaR-Mk-Vxv"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,4 +35,7 @@
             <point key="canvasLocation" x="267" y="37"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="firstshow.jpg" width="500" height="394"/>
+    </resources>
 </document>

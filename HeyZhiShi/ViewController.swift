@@ -14,16 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "主界面"
-        let currentUser = AVUser.currentUser()
-        if (currentUser != nil) {
+        self.title = "登入"
+        
+        if let currentUser = AVUser.currentUser() , let token = currentUser["RCToken"] {
             // 允许用户使用应用
-            print(currentUser["RCToken"])
+            print("\(token)")
             
             RCIM.sharedRCIM().connectWithToken(String(currentUser["RCToken"]),
                 success: { (userId) -> Void in
-                    
-                    //tempSelf!.performSegueWithIdentifier("loginAction", sender: tempSelf!)
                     dispatch_async(dispatch_get_main_queue()
                         , { () -> Void in
                             //self.successNotice("登陆成功!")

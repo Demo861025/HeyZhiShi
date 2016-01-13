@@ -28,6 +28,14 @@
 		B4EA454B1C32D6D000549031 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA454A1C32D6D000549031 /* SwiftNotice.swift */; };
 		B4EB5A191C3D4EE500009F2C /* photoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EB5A181C3D4EE500009F2C /* photoView.swift */; };
 		B4EB85FB1C3ED6B400717561 /* SetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EB85FA1C3ED6B400717561 /* SetTableViewController.swift */; };
+		B4ECF27A1C4380F600EF77CC /* butlerwelcome.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4ECF2791C4380F600EF77CC /* butlerwelcome.gif */; };
+		B4ECF27C1C4381F900EF77CC /* 管家.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4ECF27B1C4381F900EF77CC /* 管家.gif */; };
+		B4ECF27E1C438C9800EF77CC /* xingxiang.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4ECF27D1C438C9800EF77CC /* xingxiang.gif */; };
+		B4ED3C271C421EBA001C8E73 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED3C261C421EBA001C8E73 /* UIImage+Gif.swift */; };
+		B4ED3CB41C424A0E001C8E73 /* gj_0000.png in Resources */ = {isa = PBXBuildFile; fileRef = B4ED3C881C424A0E001C8E73 /* gj_0000.png */; };
+		B4ED3CE11C425960001C8E73 /* firstshow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4ED3CE01C425960001C8E73 /* firstshow.jpg */; };
+		B4F02FBC1C44EAF000BBB131 /* PS2hjgfg.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4F02FBA1C44EAF000BBB131 /* PS2hjgfg.gif */; };
+		B4F02FBD1C44EAF000BBB131 /* PS21214.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4F02FBB1C44EAF000BBB131 /* PS21214.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,14 @@
 		B4EA454A1C32D6D000549031 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		B4EB5A181C3D4EE500009F2C /* photoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoView.swift; sourceTree = "<group>"; };
 		B4EB85FA1C3ED6B400717561 /* SetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewController.swift; sourceTree = "<group>"; };
+		B4ECF2791C4380F600EF77CC /* butlerwelcome.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = butlerwelcome.gif; sourceTree = "<group>"; };
+		B4ECF27B1C4381F900EF77CC /* 管家.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "管家.gif"; sourceTree = "<group>"; };
+		B4ECF27D1C438C9800EF77CC /* xingxiang.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = xingxiang.gif; sourceTree = "<group>"; };
+		B4ED3C261C421EBA001C8E73 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		B4ED3C881C424A0E001C8E73 /* gj_0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gj_0000.png; sourceTree = "<group>"; };
+		B4ED3CE01C425960001C8E73 /* firstshow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstshow.jpg; sourceTree = "<group>"; };
+		B4F02FBA1C44EAF000BBB131 /* PS2hjgfg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PS2hjgfg.gif; sourceTree = "<group>"; };
+		B4F02FBB1C44EAF000BBB131 /* PS21214.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PS21214.gif; sourceTree = "<group>"; };
 		EBCB1EF92CC0BD1672622937 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +142,7 @@
 				B483579F1C2917C200D69170 /* HeyZhiShiTests */,
 				B48357AA1C2917C200D69170 /* HeyZhiShiUITests */,
 				B48357891C2917C200D69170 /* Products */,
+				B4ED3C281C42295F001C8E73 /* gifimage */,
 				5865DC6BE8440A34B88F8634 /* Pods */,
 				F408139EE07AA125666CB68F /* Frameworks */,
 			);
@@ -185,11 +202,43 @@
 		B4EA45491C32D67100549031 /* 3rd party */ = {
 			isa = PBXGroup;
 			children = (
+				B4ED3C261C421EBA001C8E73 /* UIImage+Gif.swift */,
 				B4EA454A1C32D6D000549031 /* SwiftNotice.swift */,
 				B45BDEB51C3801AC007377B1 /* NSString_MessageDigest.h */,
 				B45BDEB61C3801CC007377B1 /* NSString_MessageDigest.m */,
 			);
 			name = "3rd party";
+			sourceTree = "<group>";
+		};
+		B4ED3C281C42295F001C8E73 /* gifimage */ = {
+			isa = PBXGroup;
+			children = (
+				B4ED3CE01C425960001C8E73 /* firstshow.jpg */,
+				B4ED3C291C42295F001C8E73 /* butlergif */,
+			);
+			name = gifimage;
+			path = HeyZhiShi/gifimage;
+			sourceTree = "<group>";
+		};
+		B4ED3C291C42295F001C8E73 /* butlergif */ = {
+			isa = PBXGroup;
+			children = (
+				B4ECF27D1C438C9800EF77CC /* xingxiang.gif */,
+				B4ECF27B1C4381F900EF77CC /* 管家.gif */,
+				B4F02FBA1C44EAF000BBB131 /* PS2hjgfg.gif */,
+				B4F02FBB1C44EAF000BBB131 /* PS21214.gif */,
+				B4ECF2791C4380F600EF77CC /* butlerwelcome.gif */,
+				B4ED3C871C424A0E001C8E73 /* welcome */,
+			);
+			path = butlergif;
+			sourceTree = "<group>";
+		};
+		B4ED3C871C424A0E001C8E73 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B4ED3C881C424A0E001C8E73 /* gj_0000.png */,
+			);
+			path = welcome;
 			sourceTree = "<group>";
 		};
 		F408139EE07AA125666CB68F /* Frameworks */ = {
@@ -310,10 +359,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F02FBD1C44EAF000BBB131 /* PS21214.gif in Resources */,
 				B48357961C2917C200D69170 /* LaunchScreen.storyboard in Resources */,
+				B4ECF27C1C4381F900EF77CC /* 管家.gif in Resources */,
 				B48357931C2917C200D69170 /* Assets.xcassets in Resources */,
+				B4ECF27E1C438C9800EF77CC /* xingxiang.gif in Resources */,
 				B48357BA1C291D6D00D69170 /* Podfile in Resources */,
+				B4ECF27A1C4380F600EF77CC /* butlerwelcome.gif in Resources */,
+				B4ED3CB41C424A0E001C8E73 /* gj_0000.png in Resources */,
+				B4ED3CE11C425960001C8E73 /* firstshow.jpg in Resources */,
 				B48357911C2917C200D69170 /* Main.storyboard in Resources */,
+				B4F02FBC1C44EAF000BBB131 /* PS2hjgfg.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +446,7 @@
 				2C90A66B1C3E65B8001DE588 /* PhotoVC.swift in Sources */,
 				B4EB85FB1C3ED6B400717561 /* SetTableViewController.swift in Sources */,
 				B4EB5A191C3D4EE500009F2C /* photoView.swift in Sources */,
+				B4ED3C271C421EBA001C8E73 /* UIImage+Gif.swift in Sources */,
 				B4067F3C1C38E52E00A1EBD9 /* KFServiceChatViewController.swift in Sources */,
 				B483578E1C2917C200D69170 /* ViewController.swift in Sources */,
 				B498CE2D1C2921300050F1C1 /* BrdgingHeader.m in Sources */,

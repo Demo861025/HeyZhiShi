@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
   - AVOSCloud (3.1.7.1)
-  - RongCloudIMKit (2.4.2)
+  - RongCloudIMKit (2.4.3)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
@@ -27,7 +27,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   AVOSCloud: 142b7cef3c0bc059dfb73739e02cf9487e65ff66
-  RongCloudIMKit: 076f9f4b0365eeb18fc64e4d014ca174345b2320
+  RongCloudIMKit: 45c0482b73d7828aa0fc83f5985ad245bc87cca8
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

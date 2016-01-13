@@ -9,8 +9,7 @@
 import UIKit
 import AVFoundation
 
-class photoView: UIView, AVCaptureMetadataOutputObjectsDelegate,
-UIAlertViewDelegate {
+class photoView: UIView{
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -19,12 +18,7 @@ UIAlertViewDelegate {
         // Drawing code
     }
     */
-    var scanRectView:UIView!
-    var device:AVCaptureDevice!
-    var input:AVCaptureDeviceInput!
-    var output:AVCaptureMetadataOutput!
-    var session:AVCaptureSession!
-    var preview:AVCaptureVideoPreviewLayer!
+    
 //    
     
 }

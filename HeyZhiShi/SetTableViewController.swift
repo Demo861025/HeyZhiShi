@@ -12,7 +12,6 @@ class SetTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,6 +30,7 @@ class SetTableViewController: UITableViewController {
         AVUser.logOut()
         RCIM.sharedRCIM().logout()
         RCIMClient.sharedRCIMClient().logout()
+        //self.performSegueWithIdentifier("logoutAction", sender: self)
     }
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
