@@ -12,6 +12,11 @@
 		B4067F3C1C38E52E00A1EBD9 /* KFServiceChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4067F3B1C38E52E00A1EBD9 /* KFServiceChatViewController.swift */; };
 		B41F862E1C377E40002CF04D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F862D1C377E40002CF04D /* Security.framework */; };
 		B41F86301C377EB5002CF04D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F862F1C377EB5002CF04D /* UIKit.framework */; };
+		B45072ED1C46A60E00F4E9A1 /* ShakeCalledmealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45072EC1C46A60E00F4E9A1 /* ShakeCalledmealViewController.swift */; };
+		B45072EF1C46BEBD00F4E9A1 /* DKDropMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45072EE1C46BEBD00F4E9A1 /* DKDropMenu.swift */; };
+		B45072F51C46D1E400F4E9A1 /* Shake_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B45072F21C46D1E300F4E9A1 /* Shake_back.png */; };
+		B45072F61C46D1E400F4E9A1 /* Shake_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = B45072F31C46D1E400F4E9A1 /* Shake_Down.png */; };
+		B45072F71C46D1E400F4E9A1 /* Shake_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = B45072F41C46D1E400F4E9A1 /* Shake_Up.png */; };
 		B45BDEB71C3801CC007377B1 /* NSString_MessageDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = B45BDEB61C3801CC007377B1 /* NSString_MessageDigest.m */; };
 		B483578C1C2917C200D69170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483578B1C2917C200D69170 /* AppDelegate.swift */; };
 		B483578E1C2917C200D69170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B483578D1C2917C200D69170 /* ViewController.swift */; };
@@ -62,6 +67,11 @@
 		B4067F3B1C38E52E00A1EBD9 /* KFServiceChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KFServiceChatViewController.swift; sourceTree = "<group>"; };
 		B41F862D1C377E40002CF04D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B41F862F1C377EB5002CF04D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B45072EC1C46A60E00F4E9A1 /* ShakeCalledmealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeCalledmealViewController.swift; sourceTree = "<group>"; };
+		B45072EE1C46BEBD00F4E9A1 /* DKDropMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKDropMenu.swift; sourceTree = "<group>"; };
+		B45072F21C46D1E300F4E9A1 /* Shake_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_back.png; sourceTree = "<group>"; };
+		B45072F31C46D1E400F4E9A1 /* Shake_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_Down.png; sourceTree = "<group>"; };
+		B45072F41C46D1E400F4E9A1 /* Shake_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_Up.png; sourceTree = "<group>"; };
 		B45BDEB51C3801AC007377B1 /* NSString_MessageDigest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSString_MessageDigest.h; sourceTree = "<group>"; };
 		B45BDEB61C3801CC007377B1 /* NSString_MessageDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_MessageDigest.m; sourceTree = "<group>"; };
 		B48357881C2917C200D69170 /* HeyZhiShi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyZhiShi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +144,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B45072F11C46D1E300F4E9A1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B45072F21C46D1E300F4E9A1 /* Shake_back.png */,
+				B45072F31C46D1E400F4E9A1 /* Shake_Down.png */,
+				B45072F41C46D1E400F4E9A1 /* Shake_Up.png */,
+			);
+			name = images;
+			path = HeyZhiShi/images;
+			sourceTree = "<group>";
+		};
 		B483577F1C2917C200D69170 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +164,7 @@
 				B48357AA1C2917C200D69170 /* HeyZhiShiUITests */,
 				B48357891C2917C200D69170 /* Products */,
 				B4ED3C281C42295F001C8E73 /* gifimage */,
+				B45072F11C46D1E300F4E9A1 /* images */,
 				5865DC6BE8440A34B88F8634 /* Pods */,
 				F408139EE07AA125666CB68F /* Frameworks */,
 			);
@@ -177,6 +199,7 @@
 				B4EB5A181C3D4EE500009F2C /* photoView.swift */,
 				2C90A66A1C3E65B8001DE588 /* PhotoVC.swift */,
 				B4EB85FA1C3ED6B400717561 /* SetTableViewController.swift */,
+				B45072EC1C46A60E00F4E9A1 /* ShakeCalledmealViewController.swift */,
 			);
 			path = HeyZhiShi;
 			sourceTree = "<group>";
@@ -204,6 +227,7 @@
 			children = (
 				B4ED3C261C421EBA001C8E73 /* UIImage+Gif.swift */,
 				B4EA454A1C32D6D000549031 /* SwiftNotice.swift */,
+				B45072EE1C46BEBD00F4E9A1 /* DKDropMenu.swift */,
 				B45BDEB51C3801AC007377B1 /* NSString_MessageDigest.h */,
 				B45BDEB61C3801CC007377B1 /* NSString_MessageDigest.m */,
 			);
@@ -360,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4F02FBD1C44EAF000BBB131 /* PS21214.gif in Resources */,
+				B45072F51C46D1E400F4E9A1 /* Shake_back.png in Resources */,
 				B48357961C2917C200D69170 /* LaunchScreen.storyboard in Resources */,
 				B4ECF27C1C4381F900EF77CC /* 管家.gif in Resources */,
 				B48357931C2917C200D69170 /* Assets.xcassets in Resources */,
@@ -367,6 +392,8 @@
 				B48357BA1C291D6D00D69170 /* Podfile in Resources */,
 				B4ECF27A1C4380F600EF77CC /* butlerwelcome.gif in Resources */,
 				B4ED3CB41C424A0E001C8E73 /* gj_0000.png in Resources */,
+				B45072F71C46D1E400F4E9A1 /* Shake_Up.png in Resources */,
+				B45072F61C46D1E400F4E9A1 /* Shake_Down.png in Resources */,
 				B4ED3CE11C425960001C8E73 /* firstshow.jpg in Resources */,
 				B48357911C2917C200D69170 /* Main.storyboard in Resources */,
 				B4F02FBC1C44EAF000BBB131 /* PS2hjgfg.gif in Resources */,
@@ -443,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E9C29E1C2EF5C000BC6FAE /* RegTableViewController.swift in Sources */,
+				B45072ED1C46A60E00F4E9A1 /* ShakeCalledmealViewController.swift in Sources */,
 				2C90A66B1C3E65B8001DE588 /* PhotoVC.swift in Sources */,
 				B4EB85FB1C3ED6B400717561 /* SetTableViewController.swift in Sources */,
 				B4EB5A191C3D4EE500009F2C /* photoView.swift in Sources */,
@@ -450,6 +478,7 @@
 				B4067F3C1C38E52E00A1EBD9 /* KFServiceChatViewController.swift in Sources */,
 				B483578E1C2917C200D69170 /* ViewController.swift in Sources */,
 				B498CE2D1C2921300050F1C1 /* BrdgingHeader.m in Sources */,
+				B45072EF1C46BEBD00F4E9A1 /* DKDropMenu.swift in Sources */,
 				B4EA454B1C32D6D000549031 /* SwiftNotice.swift in Sources */,
 				B4ACCE451C36636700DFC9A2 /* OptionViewController.swift in Sources */,
 				B483578C1C2917C200D69170 /* AppDelegate.swift in Sources */,

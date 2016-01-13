@@ -245,6 +245,167 @@
             </objects>
             <point key="canvasLocation" x="772" y="-11"/>
         </scene>
+        <!--Shake Calledmeal View Controller-->
+        <scene sceneID="ujC-8N-Fnr">
+            <objects>
+                <viewController id="HkE-Uh-pHJ" customClass="ShakeCalledmealViewController" customModule="HeyZhiShi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OIM-0A-0It"/>
+                        <viewControllerLayoutGuide type="bottom" id="YNS-pP-MSU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bhl-uQ-QFW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHo-sq-lKI" customClass="DKDropMenu" customModule="HeyZhiShi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.79005421819999999" green="0.95146674809999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ta7-GY-hxJ">
+                                        <variation key="widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ta7-GY-hxJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ta7-GY-hxJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZL-GJ-7tL" customClass="DKDropMenu" customModule="HeyZhiShi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.79005421819999999" green="0.95146674809999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114.5" id="Lo7-el-fWb">
+                                        <variation key="widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lo7-el-fWb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lo7-el-fWb"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgX-sU-Wch" customClass="DKDropMenu" customModule="HeyZhiShi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.79005421819999999" green="0.95146674809999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="HIs-8B-YSC">
+                                        <variation key="widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemHeight">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HIs-8B-YSC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HIs-8B-YSC"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dgX-sU-Wch" firstAttribute="top" secondItem="OIM-0A-0It" secondAttribute="bottom" constant="20" id="AwF-ro-P8g"/>
+                            <constraint firstItem="nZL-GJ-7tL" firstAttribute="top" secondItem="OIM-0A-0It" secondAttribute="bottom" constant="28" id="FTt-rc-DhR">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="sHo-sq-lKI" firstAttribute="centerX" secondItem="bhl-uQ-QFW" secondAttribute="centerX" id="KHa-33-iBt"/>
+                            <constraint firstItem="sHo-sq-lKI" firstAttribute="top" secondItem="OIM-0A-0It" secondAttribute="bottom" constant="28" id="Zto-sQ-No1">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="dgX-sU-Wch" secondAttribute="trailing" constant="44" id="a6s-In-SuH">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="nZL-GJ-7tL" firstAttribute="leading" secondItem="bhl-uQ-QFW" secondAttribute="leading" constant="13" id="iWP-hO-aWU">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sHo-sq-lKI"/>
+                                <exclude reference="nZL-GJ-7tL"/>
+                                <exclude reference="dgX-sU-Wch"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FTt-rc-DhR"/>
+                                <exclude reference="iWP-hO-aWU"/>
+                                <exclude reference="KHa-33-iBt"/>
+                                <exclude reference="Zto-sQ-No1"/>
+                                <exclude reference="AwF-ro-P8g"/>
+                                <exclude reference="a6s-In-SuH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sHo-sq-lKI"/>
+                                <include reference="nZL-GJ-7tL"/>
+                                <include reference="dgX-sU-Wch"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FTt-rc-DhR"/>
+                                <include reference="iWP-hO-aWU"/>
+                                <include reference="KHa-33-iBt"/>
+                                <include reference="Zto-sQ-No1"/>
+                                <include reference="AwF-ro-P8g"/>
+                                <include reference="a6s-In-SuH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="rangeofprice" destination="dgX-sU-Wch" id="Ogo-hJ-Cbe"/>
+                        <outlet property="styleofcooking" destination="nZL-GJ-7tL" id="WmF-g3-UwG"/>
+                        <outlet property="taste" destination="sHo-sq-lKI" id="rVl-xb-4kY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3A-8s-fMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3243" y="-1775"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="61P-Gf-aqV">
+            <objects>
+                <viewController id="daX-91-yTe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kU0-hk-hlU"/>
+                        <viewControllerLayoutGuide type="bottom" id="1UO-kL-Ur4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ksr-yo-Sla">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koA-ng-6ZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3988" y="-1783"/>
+        </scene>
         <!--一键服务-->
         <scene sceneID="Rup-xm-RA5">
             <objects>
@@ -264,6 +425,9 @@
                                     <constraint firstAttribute="width" constant="63" id="lWS-Mc-oOU"/>
                                 </constraints>
                                 <state key="normal" title="一键叫餐"/>
+                                <connections>
+                                    <segue destination="HkE-Uh-pHJ" kind="show" id="qS5-1z-agm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACt-Dv-Jlb">
                                 <rect key="frame" x="437" y="176" width="63" height="30"/>
