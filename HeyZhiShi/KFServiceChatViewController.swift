@@ -23,6 +23,20 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title="黑执事"
+        
+        self.conversationType = RCConversationType.ConversationType_APPSERVICE
+        self.targetId = "KEFU145146899064516"
+        
+        
+        if ((self.conversationType==RCConversationType.ConversationType_APPSERVICE) || (self.conversationType==RCConversationType.ConversationType_PUBLICSERVICE))
+        {
+            let profile = RCIMClient.sharedRCIMClient().getPublicServiceProfile(RCPublicServiceType(rawValue: 7)!, publicServiceId: self.targetId)
+            if ((profile.menu.menuItems) != nil) {
+                
+                self.chatSessionInputBarControl.setInputBarType(RCChatSessionInputBarControlType.PubType, style: RCChatSessionInputBarControlStyle(rawValue: 0)!)
+                self.chatSessionInputBarControl.publicServiceMenu = profile.menu
+            }
+        }
         //        var gitArray = [UIImage]()
         //        for (var i = 0; i<=40; i++) {
         //            var tempName="0000"+"\(i)"
@@ -45,8 +59,6 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
                 butlerwelcomegif!.append(butlerwelcomegif![i])
             }
         }
-        
-        
         
         item=UIBarButtonItem(title: "人物", style: UIBarButtonItemStyle.Plain, target: self, action: "handPhotovcOnshow")
         
@@ -82,6 +94,7 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
 //            alert.reloadInputViews()
             print("没有权限")
         }
+        
         let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         //创建输入流_
         do {
@@ -112,7 +125,6 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.chatSessionInputBarControl.pubSwitchButton.sendActionsForControlEvents(.TouchUpInside)
         self.navigationController?.navigationBarHidden = false
     }
@@ -125,7 +137,6 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
         
     }
     
@@ -216,6 +227,22 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
     func cameraPermissions() -> Bool{
         
         let authStatus:AVAuthorizationStatus = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
+        //查看相机权限状态
+//        if(authStatus == AVAuthorizationStatus.Denied) {
+//            print("1")
+//        }
+//        
+//        if(authStatus == AVAuthorizationStatus.Restricted){
+//            print("2")
+//        }
+//        
+//        if(authStatus == AVAuthorizationStatus.Authorized){
+//            print("3")
+//        }
+//        
+//        if(authStatus == AVAuthorizationStatus.NotDetermined){
+//            print("4")
+//        }
         
         if(authStatus == AVAuthorizationStatus.Denied || authStatus == AVAuthorizationStatus.Restricted) {
             return false

@@ -40,8 +40,12 @@ class OptionViewController: UIViewController {
         
     }
     @IBAction func kfOnclick(sender: UIButton) {
-        let conversationVC = KFServiceChatViewController.init(conversationType: RCConversationType.ConversationType_APPSERVICE, targetId: "KEFU145146899064516")
-        self.navigationController?.pushViewController(conversationVC, animated: true)
+        let conversationVC = self.storyboard?.instantiateViewControllerWithIdentifier("conversationVC")
+        self.navigationController?.pushViewController(conversationVC!, animated: true)
+        
+        
+//        let conversationVC = KFServiceChatViewController.init(conversationType: RCConversationType.ConversationType_APPSERVICE, targetId: "KEFU145146899064516")
+//        self.navigationController?.pushViewController(conversationVC, animated: true)
         /*
         //绑定到按钮直接跳转客服页面
         let conversationVC = RCPublicServiceChatViewController.init()

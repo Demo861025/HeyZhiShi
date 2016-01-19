@@ -297,7 +297,7 @@
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1178,7 +1178,7 @@
         <!--Service Chat View Controller-->
         <scene sceneID="12d-yR-Srt">
             <objects>
-                <viewController id="gwB-0M-BCY" customClass="KFServiceChatViewController" customModule="HeyZhiShi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="conversationVC" id="gwB-0M-BCY" customClass="KFServiceChatViewController" customModule="HeyZhiShi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xsn-kH-QbY"/>
                         <viewControllerLayoutGuide type="bottom" id="NSs-8T-PcG"/>
