@@ -2,58 +2,15 @@
 // Copyright 2013 AVOS, Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
+#import "AVAvailability.h"
+
 @class AVObject;
 @class AVUser;
 @class AVFile;
 
-//! Project version number for AVOSCloud.
-FOUNDATION_EXPORT double AVOSCloudVersionNumber;
-
-//! Project version string for AVOSCloud.
-FOUNDATION_EXPORT const unsigned char AVOSCloudVersionString[];
-
-// Platform
-#define AVOS_IOS_ONLY (TARGET_OS_IPHONE)
-#define AVOS_OSX_ONLY (TARGET_OS_MAC && !TARGET_OS_IPHONE)
-
-#define AVOS_TARGET_OS_OSX (TARGET_OS_MAC && !TARGET_OS_IOS && !TARGET_OS_WATCH && !TARGET_OS_TV)
-#define AVOS_TARGET_OS_IOS (TARGET_OS_IOS && !TARGET_OS_WATCH && !TARGET_OS_TV)
-
-#ifndef AV_IOS_UNAVAILABLE
-#  ifdef __IOS_UNAVILABLE
-#    define AV_IOS_UNAVAILABLE __IOS_UNAVAILABLE
-#  else
-#    define AV_IOS_UNAVAILABLE
-#  endif
-#endif
-
-#ifndef AV_OSX_UNAVAILABLE
-#  if TARGET_OS_MAC
-#    define AV_OSX_UNAVAILABLE __OSX_UNAVAILABLE
-#  else
-#    define AV_OSX_UNAVAILABLE
-#  endif
-#endif
-
-#ifndef AV_WATCH_UNAVAILABLE
-#  ifdef __WATCHOS_UNAVAILABLE
-#    define AV_WATCH_UNAVAILABLE __WATCHOS_UNAVAILABLE
-#  else
-#    define AV_WATCH_UNAVAILABLE
-#  endif
-#endif
-
-#ifndef AV_TV_UNAVAILABLE
-#  ifdef __TVOS_PROHIBITED
-#    define AV_TV_UNAVAILABLE __TVOS_PROHIBITED
-#  else
-#    define AV_TV_UNAVAILABLE
-#  endif
-#endif
-
-#if AVOS_IOS_ONLY
+#if AV_IOS_ONLY
 #import <UIKit/UIKit.h>
-#elif AVOS_OSX_ONLY
+#elif AV_OSX_ONLY
 #import <Cocoa/Cocoa.h>
 @compatibility_alias UIImage NSImage;
 @compatibility_alias UIColor NSColor;
@@ -212,4 +169,4 @@ typedef void (^AVProgressBlock)(NSInteger percentDone);
 typedef void (^AVFileResultBlock)(AVFile * file, NSError *error);
 typedef void (^AVDictionaryResultBlock)(NSDictionary * dict, NSError *error);
 
-#define AVDeprecated(explain) __attribute__((deprecated(explain)))
+#define AV_DEPRECATED(explain) __attribute__((deprecated(explain)))

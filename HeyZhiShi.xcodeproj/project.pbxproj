@@ -28,7 +28,11 @@
 		B48357BA1C291D6D00D69170 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B48357B91C291D6D00D69170 /* Podfile */; };
 		B498CE2D1C2921300050F1C1 /* BrdgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B498CE2C1C2921300050F1C1 /* BrdgingHeader.m */; };
 		B4ACCE451C36636700DFC9A2 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ACCE441C36636700DFC9A2 /* OptionViewController.swift */; };
+		B4E6A50D1C4DDA17004F8DD3 /* foodshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6A50C1C4DDA17004F8DD3 /* foodshowViewController.swift */; };
+		B4E6A50F1C4DE28E004F8DD3 /* launchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E6A50E1C4DE28E004F8DD3 /* launchScreenViewController.swift */; };
+		B4E9A6561C4D47FC00BF00A1 /* taxiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9A6551C4D47FC00BF00A1 /* taxiViewController.swift */; };
 		B4E9C29E1C2EF5C000BC6FAE /* RegTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E9C29D1C2EF5C000BC6FAE /* RegTableViewController.swift */; };
+		B4EA17B91C4770D600E96C7F /* personalinfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA17B81C4770D600E96C7F /* personalinfoTableViewController.swift */; };
 		B4EA45471C32668800549031 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA45461C32668800549031 /* MainViewController.swift */; };
 		B4EA454B1C32D6D000549031 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EA454A1C32D6D000549031 /* SwiftNotice.swift */; };
 		B4EB5A191C3D4EE500009F2C /* photoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EB5A181C3D4EE500009F2C /* photoView.swift */; };
@@ -39,6 +43,15 @@
 		B4ED3C271C421EBA001C8E73 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4ED3C261C421EBA001C8E73 /* UIImage+Gif.swift */; };
 		B4ED3CB41C424A0E001C8E73 /* gj_0000.png in Resources */ = {isa = PBXBuildFile; fileRef = B4ED3C881C424A0E001C8E73 /* gj_0000.png */; };
 		B4ED3CE11C425960001C8E73 /* firstshow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4ED3CE01C425960001C8E73 /* firstshow.jpg */; };
+		B4EF7FB61C4CB2F100E9A14D /* 光界面2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FAF1C4CB2F100E9A14D /* 光界面2.png */; };
+		B4EF7FB71C4CB2F100E9A14D /* 叫车_meitu.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FB01C4CB2F100E9A14D /* 叫车_meitu.png */; };
+		B4EF7FB81C4CB2F100E9A14D /* 取送_meitu.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FB11C4CB2F100E9A14D /* 取送_meitu.png */; };
+		B4EF7FB91C4CB2F100E9A14D /* 外卖_meitu.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FB21C4CB2F100E9A14D /* 外卖_meitu.png */; };
+		B4EF7FBA1C4CB2F100E9A14D /* hey!master_meitu.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FB31C4CB2F100E9A14D /* hey!master_meitu.png */; };
+		B4EF7FBB1C4CB2F100E9A14D /* photo_meitu.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FB41C4CB2F100E9A14D /* photo_meitu.png */; };
+		B4EF7FBC1C4CB2F100E9A14D /* signup_meitu.png in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FB51C4CB2F100E9A14D /* signup_meitu.png */; };
+		B4EF7FC01C4CC74A00E9A14D /* 启动界面.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4EF7FBF1C4CC74A00E9A14D /* 启动界面.gif */; };
+		B4EF7FC21C4CCB9600E9A14D /* expressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EF7FC11C4CCB9600E9A14D /* expressViewController.swift */; };
 		B4F02FBC1C44EAF000BBB131 /* PS2hjgfg.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4F02FBA1C44EAF000BBB131 /* PS2hjgfg.gif */; };
 		B4F02FBD1C44EAF000BBB131 /* PS21214.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4F02FBB1C44EAF000BBB131 /* PS21214.gif */; };
 /* End PBXBuildFile section */
@@ -91,7 +104,11 @@
 		B498CE2B1C2921300050F1C1 /* HeyZhiShi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeyZhiShi-Bridging-Header.h"; sourceTree = "<group>"; };
 		B498CE2C1C2921300050F1C1 /* BrdgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrdgingHeader.m; sourceTree = "<group>"; };
 		B4ACCE441C36636700DFC9A2 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		B4E6A50C1C4DDA17004F8DD3 /* foodshowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodshowViewController.swift; sourceTree = "<group>"; };
+		B4E6A50E1C4DE28E004F8DD3 /* launchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = launchScreenViewController.swift; sourceTree = "<group>"; };
+		B4E9A6551C4D47FC00BF00A1 /* taxiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taxiViewController.swift; sourceTree = "<group>"; };
 		B4E9C29D1C2EF5C000BC6FAE /* RegTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegTableViewController.swift; sourceTree = "<group>"; };
+		B4EA17B81C4770D600E96C7F /* personalinfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = personalinfoTableViewController.swift; sourceTree = "<group>"; };
 		B4EA45461C32668800549031 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B4EA454A1C32D6D000549031 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		B4EB5A181C3D4EE500009F2C /* photoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = photoView.swift; sourceTree = "<group>"; };
@@ -102,6 +119,15 @@
 		B4ED3C261C421EBA001C8E73 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		B4ED3C881C424A0E001C8E73 /* gj_0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gj_0000.png; sourceTree = "<group>"; };
 		B4ED3CE01C425960001C8E73 /* firstshow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firstshow.jpg; sourceTree = "<group>"; };
+		B4EF7FAF1C4CB2F100E9A14D /* 光界面2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "光界面2.png"; sourceTree = "<group>"; };
+		B4EF7FB01C4CB2F100E9A14D /* 叫车_meitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "叫车_meitu.png"; sourceTree = "<group>"; };
+		B4EF7FB11C4CB2F100E9A14D /* 取送_meitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "取送_meitu.png"; sourceTree = "<group>"; };
+		B4EF7FB21C4CB2F100E9A14D /* 外卖_meitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外卖_meitu.png"; sourceTree = "<group>"; };
+		B4EF7FB31C4CB2F100E9A14D /* hey!master_meitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hey!master_meitu.png"; sourceTree = "<group>"; };
+		B4EF7FB41C4CB2F100E9A14D /* photo_meitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_meitu.png; sourceTree = "<group>"; };
+		B4EF7FB51C4CB2F100E9A14D /* signup_meitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup_meitu.png; sourceTree = "<group>"; };
+		B4EF7FBF1C4CC74A00E9A14D /* 启动界面.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "启动界面.gif"; sourceTree = "<group>"; };
+		B4EF7FC11C4CCB9600E9A14D /* expressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = expressViewController.swift; sourceTree = "<group>"; };
 		B4F02FBA1C44EAF000BBB131 /* PS2hjgfg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PS2hjgfg.gif; sourceTree = "<group>"; };
 		B4F02FBB1C44EAF000BBB131 /* PS21214.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PS21214.gif; sourceTree = "<group>"; };
 		EBCB1EF92CC0BD1672622937 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +173,13 @@
 		B45072F11C46D1E300F4E9A1 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B4EF7FAF1C4CB2F100E9A14D /* 光界面2.png */,
+				B4EF7FB01C4CB2F100E9A14D /* 叫车_meitu.png */,
+				B4EF7FB11C4CB2F100E9A14D /* 取送_meitu.png */,
+				B4EF7FB21C4CB2F100E9A14D /* 外卖_meitu.png */,
+				B4EF7FB31C4CB2F100E9A14D /* hey!master_meitu.png */,
+				B4EF7FB41C4CB2F100E9A14D /* photo_meitu.png */,
+				B4EF7FB51C4CB2F100E9A14D /* signup_meitu.png */,
 				B45072F21C46D1E300F4E9A1 /* Shake_back.png */,
 				B45072F31C46D1E400F4E9A1 /* Shake_Down.png */,
 				B45072F41C46D1E400F4E9A1 /* Shake_Up.png */,
@@ -200,6 +233,11 @@
 				2C90A66A1C3E65B8001DE588 /* PhotoVC.swift */,
 				B4EB85FA1C3ED6B400717561 /* SetTableViewController.swift */,
 				B45072EC1C46A60E00F4E9A1 /* ShakeCalledmealViewController.swift */,
+				B4EA17B81C4770D600E96C7F /* personalinfoTableViewController.swift */,
+				B4EF7FC11C4CCB9600E9A14D /* expressViewController.swift */,
+				B4E9A6551C4D47FC00BF00A1 /* taxiViewController.swift */,
+				B4E6A50C1C4DDA17004F8DD3 /* foodshowViewController.swift */,
+				B4E6A50E1C4DE28E004F8DD3 /* launchScreenViewController.swift */,
 			);
 			path = HeyZhiShi;
 			sourceTree = "<group>";
@@ -238,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				B4ED3CE01C425960001C8E73 /* firstshow.jpg */,
+				B4EF7FBF1C4CC74A00E9A14D /* 启动界面.gif */,
 				B4ED3C291C42295F001C8E73 /* butlergif */,
 			);
 			name = gifimage;
@@ -385,18 +424,26 @@
 			files = (
 				B4F02FBD1C44EAF000BBB131 /* PS21214.gif in Resources */,
 				B45072F51C46D1E400F4E9A1 /* Shake_back.png in Resources */,
+				B4EF7FB91C4CB2F100E9A14D /* 外卖_meitu.png in Resources */,
+				B4EF7FB81C4CB2F100E9A14D /* 取送_meitu.png in Resources */,
 				B48357961C2917C200D69170 /* LaunchScreen.storyboard in Resources */,
+				B4EF7FB71C4CB2F100E9A14D /* 叫车_meitu.png in Resources */,
 				B4ECF27C1C4381F900EF77CC /* 管家.gif in Resources */,
 				B48357931C2917C200D69170 /* Assets.xcassets in Resources */,
 				B4ECF27E1C438C9800EF77CC /* xingxiang.gif in Resources */,
 				B48357BA1C291D6D00D69170 /* Podfile in Resources */,
 				B4ECF27A1C4380F600EF77CC /* butlerwelcome.gif in Resources */,
+				B4EF7FBB1C4CB2F100E9A14D /* photo_meitu.png in Resources */,
 				B4ED3CB41C424A0E001C8E73 /* gj_0000.png in Resources */,
 				B45072F71C46D1E400F4E9A1 /* Shake_Up.png in Resources */,
+				B4EF7FB61C4CB2F100E9A14D /* 光界面2.png in Resources */,
 				B45072F61C46D1E400F4E9A1 /* Shake_Down.png in Resources */,
+				B4EF7FBA1C4CB2F100E9A14D /* hey!master_meitu.png in Resources */,
+				B4EF7FC01C4CC74A00E9A14D /* 启动界面.gif in Resources */,
 				B4ED3CE11C425960001C8E73 /* firstshow.jpg in Resources */,
 				B48357911C2917C200D69170 /* Main.storyboard in Resources */,
 				B4F02FBC1C44EAF000BBB131 /* PS2hjgfg.gif in Resources */,
+				B4EF7FBC1C4CB2F100E9A14D /* signup_meitu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,14 +523,19 @@
 				B4EB5A191C3D4EE500009F2C /* photoView.swift in Sources */,
 				B4ED3C271C421EBA001C8E73 /* UIImage+Gif.swift in Sources */,
 				B4067F3C1C38E52E00A1EBD9 /* KFServiceChatViewController.swift in Sources */,
+				B4EA17B91C4770D600E96C7F /* personalinfoTableViewController.swift in Sources */,
 				B483578E1C2917C200D69170 /* ViewController.swift in Sources */,
 				B498CE2D1C2921300050F1C1 /* BrdgingHeader.m in Sources */,
+				B4E6A50F1C4DE28E004F8DD3 /* launchScreenViewController.swift in Sources */,
+				B4E9A6561C4D47FC00BF00A1 /* taxiViewController.swift in Sources */,
 				B45072EF1C46BEBD00F4E9A1 /* DKDropMenu.swift in Sources */,
 				B4EA454B1C32D6D000549031 /* SwiftNotice.swift in Sources */,
 				B4ACCE451C36636700DFC9A2 /* OptionViewController.swift in Sources */,
 				B483578C1C2917C200D69170 /* AppDelegate.swift in Sources */,
+				B4E6A50D1C4DDA17004F8DD3 /* foodshowViewController.swift in Sources */,
 				B4EA45471C32668800549031 /* MainViewController.swift in Sources */,
 				B45BDEB71C3801CC007377B1 /* NSString_MessageDigest.m in Sources */,
+				B4EF7FC21C4CCB9600E9A14D /* expressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,8 +678,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 262226387@qq.com (2HW8EPT86M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 262226387@qq.com (2HW8EPT86M)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HeyZhiShi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -646,8 +698,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 262226387@qq.com (2HW8EPT86M)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 262226387@qq.com (2HW8EPT86M)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HeyZhiShi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -50,7 +50,7 @@ class RegTableViewController: UITableViewController {
                 let tokensession = AFHTTPSessionManager.init(sessionConfiguration: net_config)
                 let parameters = [
                     "userId": String(self.RegPhoneNum?.text),
-                    "name": "",
+                    "name": String(self.RegPhoneNum?.text),
                     "portraitUri": ""
                 ]
                 let Timestamp = String(format: "%.0f",NSDate().timeIntervalSince1970)
@@ -88,6 +88,7 @@ class RegTableViewController: UITableViewController {
                             
                             user.username = self.RegPhoneNum?.text
                             user.password =  self.RegPhoneNum?.text
+                            user["nickname"] = self.RegPhoneNum?.text
                             //user.email = ""
                             user.sessionToken = ttoken
                             print(user.sessionToken)

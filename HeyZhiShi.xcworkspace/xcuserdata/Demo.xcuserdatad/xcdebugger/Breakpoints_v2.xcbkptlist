@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeyZhiShi/OptionViewController.swift"
-            timestampString = "474390846.046662"
+            timestampString = "474795108.331529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "kfOnclick(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeyZhiShi/ViewController.swift"
-            timestampString = "474029380.839748"
+            timestampString = "474790329.59875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "LoginOnClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeyZhiShi/ViewController.swift"
-            timestampString = "474029385.144256"
+            timestampString = "474790329.59875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeyZhiShi/KFServiceChatViewController.swift"
-            timestampString = "474186779.71171"
+            timestampString = "474872773.739714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "KFServiceChatViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeyZhiShi/KFServiceChatViewController.swift"
-            timestampString = "474186779.71171"
+            timestampString = "474872773.739714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "handlephotoPanGesture(_:)"
             landmarkType = "5">
          </BreakpointContent>

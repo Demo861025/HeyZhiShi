@@ -12,10 +12,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var userid: UITextField!
     @IBOutlet weak var password: UITextField!
+    var backImageView = UIImageView()
+    var rect = UIScreen.mainScreen().bounds
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "登入"
         
+        let size = rect.size
+        let width = size.width
+        let height = size.height
+        backImageView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        backImageView.image = UIImage(named: "光界面2")
+        self.view.addSubview(backImageView)
+        self.view.sendSubviewToBack(backImageView)
         if let currentUser = AVUser.currentUser() , let token = currentUser["RCToken"] {
             // 允许用户使用应用
             print("\(token)")

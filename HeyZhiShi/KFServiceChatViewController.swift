@@ -62,6 +62,26 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
         gifImageView.animationImages = butlerwelcomegif //动画图片数组
         gifImageView.animationDuration = 4.5 //执行一次完整动画所需的时长
         gifImageView.animationRepeatCount = 1 //动画重复次数
+        
+        if cameraPermissions() {
+            
+        }
+        else
+        {
+            let alertController = UIAlertController(title: "提示", message: "请在设备的设置-隐私-相机中允许访问相机。", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let okAction = UIAlertAction(title: "好的", style: UIAlertActionStyle.Default, handler: nil)
+            alertController.addAction(okAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            //let alert = UIAlertView.init(title: "提示",
+//            message:"请在设备的设置-隐私-相机中允许访问相机。",
+//            delegate:self,
+//            cancelButtonTitle:"确定")
+//            alert.show()
+//            alert.reloadInputViews()
+            print("没有权限")
+        }
         let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         //创建输入流_
         do {
@@ -94,6 +114,7 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
         super.viewWillAppear(animated)
         
         self.chatSessionInputBarControl.pubSwitchButton.sendActionsForControlEvents(.TouchUpInside)
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -108,11 +129,13 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
         
     }
     
+    
     //将要显示信息回调事件，目的朗读回发消息
     override func willAppendAndDisplayMessage(message: RCMessage!) -> RCMessage! {
         let rectTemp = tempView.frame
         if ((message.messageDirection == .MessageDirection_RECEIVE) && (rectTemp.origin.x == 0) && (rectTemp.origin.y == 0)){
             if let TextMessage = message.content as? RCTextMessage {
+                print("sp"+"\(TextMessage.content)")
                 speaking("\(TextMessage.content)")
             }
         }
@@ -182,12 +205,24 @@ class KFServiceChatViewController: RCPublicServiceChatViewController {
             print(error.code)
         }
         
-        print("sp"+txtmessage)
+        //print("sp"+txtmessage)
         let av = AVSpeechSynthesizer.init()
         let utterance1 = AVSpeechUtterance.init(string: txtmessage)
         utterance1.postUtteranceDelay = 0.5
         utterance1.rate = 0.5
         av.speakUtterance(utterance1)
+    }
+    
+    func cameraPermissions() -> Bool{
+        
+        let authStatus:AVAuthorizationStatus = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
+        
+        if(authStatus == AVAuthorizationStatus.Denied || authStatus == AVAuthorizationStatus.Restricted) {
+            return false
+        }else {
+            return true
+        }
+        
     }
     
     

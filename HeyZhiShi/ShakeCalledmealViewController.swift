@@ -15,7 +15,10 @@ class ShakeCalledmealViewController: UIViewController,DKDropMenuDelegate{
     @IBOutlet weak var styleofcooking: DKDropMenu!
     @IBOutlet weak var taste: DKDropMenu!
     @IBOutlet weak var rangeofprice: DKDropMenu!
-    
+//    
+//    @IBOutlet weak var foodwebview: UIWebView!
+//    
+//    @IBOutlet weak var shakeagainbtn: UIButton!
     var rect = UIScreen.mainScreen().bounds
     var backImageView = UIImageView()
     var backupImageView = UIImageView()
@@ -28,6 +31,8 @@ class ShakeCalledmealViewController: UIViewController,DKDropMenuDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "摇摇外卖"
+        
         // 设置允许摇一摇功能
         UIApplication.sharedApplication().applicationSupportsShakeToEdit = true
         // 并让自己成为第一响应者
@@ -54,11 +59,26 @@ class ShakeCalledmealViewController: UIViewController,DKDropMenuDelegate{
         styleofcooking.delegate = self
         taste.addItems(["香辣", "酸甜", "清淡"])
         taste.delegate = self
-        rangeofprice.addItems(["10元以下", "10~20元", "20~30元"])
+        rangeofprice.addItems(["10~20元", "20~30元", "30元以上"])
         rangeofprice.delegate = self
+        
+        
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = false
+        
+       // self.shakeagainbtn.sendActionsForControlEvents(.TouchUpInside)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //self.view.sendSubviewToBack(self.foodwebview)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -92,10 +112,32 @@ class ShakeCalledmealViewController: UIViewController,DKDropMenuDelegate{
             self.backdownImageView.transform = CGAffineTransformIdentity
             
             }) { (finish) -> Void in
-
+//                self.view.bringSubviewToFront(self.foodwebview)
+//                let url = NSURL(string: "https://m.ele.me/shop/468537/38034570?plg_nld=1&plg_nld=1&plg_uin=1&plg_auth=1&plg_usr=1&plg_vkey=1&plg_dev=1")
+//                
+//                self.foodwebview.loadRequest(NSURLRequest(URL: url!))
+                //let foodshowVC = foodjshowViewController()
+                
+//                let popTime = dispatch_time(DISPATCH_TIME_NOW,Int64(0.5 * Double(NSEC_PER_SEC)))
+//                dispatch_after(popTime, dispatch_get_main_queue(), { () -> Void in
+//                    
+//                    UIView.animateWithDuration(animateDuration, animations: { () -> Void in
+//                        self.yaoImageView1.transform = CGAffineTransformIdentity
+//                        self.yaoImageView2.transform = CGAffineTransformIdentity
+//                        }, completion: { (finish) -> Void in
+//                            
+//                            //self.loadShakeData()
+//                            // 音效
+//                           // AudioServicesPlayAlertSound(self.soundID!)
+//                    })
+                let foodshowView = self.storyboard?.instantiateViewControllerWithIdentifier("foodshow")
+                self.navigationController?.pushViewController(foodshowView!, animated: true)
             }
         print(styleofcooking.selectedItem)
     }
+//    @IBAction func shakeagain(sender: AnyObject) {
+//        self.view.sendSubviewToBack(foodwebview)
+//    }
     /*
     // MARK: - Navigation
 

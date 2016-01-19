@@ -17,16 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstshow.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-VV-IWl">
-                                <rect key="frame" x="0.0" y="79" width="600" height="394"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动界面.gif" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-VV-IWl">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XH8-VV-IWl" firstAttribute="leading" secondItem="4nk-kF-a5i" secondAttribute="leading" id="Jzw-i8-LWK"/>
                             <constraint firstAttribute="trailing" secondItem="XH8-VV-IWl" secondAttribute="trailing" id="KHF-hW-IU2"/>
-                            <constraint firstItem="XH8-VV-IWl" firstAttribute="top" secondItem="Xje-nx-9aZ" secondAttribute="bottom" constant="59" id="QRt-ov-vV4"/>
-                            <constraint firstItem="Bpp-3n-HFU" firstAttribute="top" secondItem="XH8-VV-IWl" secondAttribute="bottom" constant="127" id="ytC-s2-WdJ"/>
+                            <constraint firstItem="XH8-VV-IWl" firstAttribute="top" secondItem="Xje-nx-9aZ" secondAttribute="bottom" id="QRt-ov-vV4"/>
+                            <constraint firstItem="Bpp-3n-HFU" firstAttribute="top" secondItem="XH8-VV-IWl" secondAttribute="bottom" id="ytC-s2-WdJ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="firstshow.jpg" width="500" height="394"/>
+        <image name="启动界面.gif" width="1080" height="1920"/>
     </resources>
 </document>
